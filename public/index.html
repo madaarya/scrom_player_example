@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Scrom Player example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="colorlib.com">
+  
+  <!-- MATERIAL DESIGN ICONIC FONT -->
+  <link rel="stylesheet" href="./fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+  
+  <!-- STYLE CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/google/code-prettify/master/styles/desert.css">
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/gh/pretenderjs/FakeXMLHttpRequest@v2.1.1/fake_xml_http_request.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/route-recognizer/0.3.4/route-recognizer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pretender@3.4.3/dist/pretender.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scorm-again@latest/dist/scorm-again.js"></script>
+
+  <script src="./js/lms.js" type="application/javascript"></script>
+  <script src="./js/common.js" type="application/javascript"></script>
+  <script src="./js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+    const urlParams = new URLSearchParams(window.location.search);
+    let settings = getSettingsFromParams(urlParams);
+
+    settings.lmsCommitUrl = '/scorm12';
+
+    window.API = new Scorm12API(settings);
+
+    window.API.on('LMSSetValue.cmi.*', function(CMIElement, value) {
+      API.storeData(true);
+      $('#cmi').
+          html('window.API.cmi = ' + JSON.stringify(API.renderCommitCMI(true), null, 2)).
+          removeClass('prettyprinted');
+
+      PR.prettyPrint();
+    });
+
+    let dataFromLms = { // this data is passed from the LMS
+      cmi: {
+        core: {
+          entry: 'ab-initio',
+          student_id: '@madaarya',
+          student_name: 'Mada Arya Kusumah',
+        }
+      }
+    };
+    if(urlParams.get('existing')) {
+      dataFromLms = _.merge(dataFromLms, EXISTING_SCORM12);
+    }
+
+    window.API.loadFromJSON(dataFromLms, '');
+
+    var unloaded = false;
+    function unloadHandler() {
+      if (!unloaded && !API.isTerminated()) {
+        API.LMSSetValue('cmi.core.exit', 'suspend'); //Set exit to whatever is needed
+        API.LMSCommit(''); //save all data that has already been set
+        API.LMSTerminate(''); //close the SCORM API connection properly
+        unloaded = true;
+        return false;
+      }
+      return false;
+    }
+
+    window.onbeforeunload = unloadHandler;
+    window.onunload = unloadHandler;
+
+    $(document).ready(function() {
+      rewireLoggingToElement();
+    });
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <form action="">
+      <div id="wizard">
+        <iframe style="width:100%;height: 100%;" id="scrom-source" src="./scrom_resources/golf/shared/launchpage.html"></iframe>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
