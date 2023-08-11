@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<manifest identifier="V4Y58KgUboQ1HMtF0JviC54fsK_p7-74AcgMN9hG" version="1"
+  xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd
+                      http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd
+                      http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata>
+    <schema>ADL SCORM</schema>
+    <schemaversion>1.2</schemaversion>
+    <adlcp:location>metadata.xml</adlcp:location>
+  </metadata>
+  <organizations default="articulate_rise">
+      <organization identifier="articulate_rise">
+      <title>Listeria monocytogenes - Killerkeim im Lebensmittel?</title>
+      <item identifier="i1" identifierref="r1" isvisible="true">
+        <title>Listeria monocytogenes - Killerkeim im Lebensmittel?</title>
+        <adlcp:datafromlms>eyJjcHYiOiJBY2dNTjloRyJ9</adlcp:datafromlms>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="r1" type="webcontent" adlcp:scormtype="sco" href="scormdriver/indexAPI.html">
+      <!-- SCORMDRIVER STUFF -->
+      <file href="scormdriver/LICENSE.txt" />
+      <file href="scormdriver/indexAPI.html" />
+      <file href="scormdriver/preloadIntegrity.js" />
+      <file href="scormdriver/driverOptions.js" />
+      <file href="scormdriver/AICCComm.html" />
+      <file href="scormdriver/auto-scripts/AutoBookmark.js" />
+      <file href="scormdriver/auto-scripts/AutoCompleteSCO.js" />
+      <file href="scormdriver/auto-scripts/CourseExit.js" />
+      <file href="scormdriver/blank.html" />
+      <file href="scormdriver/goodbye.html" />
+      <file href="scormdriver/scormdriver.js" />
+      <file href="scormdriver/browsersniff.js" />
+
+      <!-- RUNTIME COMMON STUFF -->
+      <file href="scormcontent/index.html" />
+      <file href="scormcontent/lib/main.bundle.js"/>
+
+      
+        <file href="scormcontent/lib/fonts/icomoon.ttf"/>
+        <file href="scormcontent/lib/fonts/icomoon.woff"/>
+
+        <file href="scormcontent/lib/icomoon.css"/>
+        <file href="scormcontent/lib/main.bundle.css"/>
+        <file href="scormcontent/lib/player-0.0.11.min.js"/>
+        <file href="scormcontent/lib/lzwcompress.js"/>
+      
+
+      <!-- RUNTIME CONTENT STUFF -->
+      <file href="scormcontent/lib/fonts/OpenSans-Light.woff" />
+<file href="scormcontent/lib/fonts/OpenSans-Regular.woff" />
+<file href="scormcontent/lib/fonts/OpenSans-Bold.woff" />
+<file href="scormcontent/lib/fonts/OpenSans-Italic.woff" />
+<file href="scormcontent/lib/fonts/Raleway-Light.woff" />
+<file href="scormcontent/lib/fonts/Raleway-Regular.woff" />
+<file href="scormcontent/lib/fonts/Raleway-Bold.woff" />
+<file href="scormcontent/lib/fonts/Raleway-Italic.woff" />
+<file href="scormcontent/lib/fonts/Raleway-Black.woff" />
+<file href="scormcontent/lib/fonts/Lato-Light.woff" />
+<file href="scormcontent/lib/fonts/Lato-Regular.woff" />
+<file href="scormcontent/lib/fonts/Lato-Bold.woff" />
+<file href="scormcontent/lib/fonts/Lato-Italic.woff" />
+<file href="scormcontent/lib/fonts/Lato-Black.woff" />
+<file href="scormcontent/assets/tkW9Si3NDYdlbSIX_small.png" />
+<file href="scormcontent/assets/M3BEfD8LFk5a7rsj_quote_background.jpg" />
+<file href="scormcontent/assets/ARAH4M32ud8kyfnN_w9chcTP9iF6NYFx5.jpg" />
+<file href="scormcontent/assets/gwvqVev2N6Fb8FDV_UpFr8BxGmV8pZ-5Q.jpg" />
+<file href="scormcontent/assets/0zPRFzLGOSx9TRXI_8DH5Yo0xHg0eHXlU.jpg" />
+<file href="scormcontent/assets/DdMWpHzqgxACyZl1_p8Vx2FtQtUmm8Rpi.jpg" />
+<file href="scormcontent/assets/xDcye3tiv475Kfqz_4MAK_POKSTWyf-aH.png" />
+<file href="scormcontent/assets/gOVC4sjHaq2Qkt9C_STpsT9sWp6udX65i.png" />
+<file href="scormcontent/assets/0TLUHQ4UfrOnsX4N_omLqVIRjz3rJoyM3-Steckbrief%20Listeria%20monocytogenes_V1.3.pdf" />
+<file href="scormcontent/assets/19TzBrg6R_53XDwD_FLacrZF96ST_Ualo.jpg" />
+<file href="scormcontent/assets/i1hxZItPC_gCHmYx_qmCNsmTw6vce9Nlt.png" />
+<file href="scormcontent/assets/OOhipySZu4enu4fA_Gh3Xubncix1o10GZ.jpg" />
+<file href="scormcontent/assets/WY65mo7VTqs2c5yD_KGNkCGmk7FPDabJ1.jpg" />
+<file href="scormcontent/assets/Lk5YGcmGah1oE5mR_V_ZBZeuDcf03dCpS.jpg" />
+<file href="scormcontent/assets/Xurxh0Fq_GBTGfr7_transcoded-6FNtB4gL_tM8XKZN-01_Pr%C3%A4sentation%20L-00001.png" />
+<file href="scormcontent/assets/AqJJUwyQGbU95QfH_transcoded-6FNtB4gL_tM8XKZN-01_Pr%C3%A4sentation%20L.mp4" />
+<file href="scormcontent/assets/YjiETxBruCUynFW7_08M94cMgzkfq6Uop.jpg" />
+<file href="scormcontent/assets/2Ffb4lrPfp_zpIA4_cIVvtaVvdgFc3PPx.jpg" />
+<file href="scormcontent/assets/TMGTkhVhkJ1cl_kh_KHLVRrDb5mG2NJ2Z.jpg" />
+<file href="scormcontent/assets/hxACGrFqkurAnnjT_V2Yb0zj_Ib1p5bHY.jpg" />
+<file href="scormcontent/assets/-VRB56JQMps2bN5N_a31NpV5gDItUDAa2.jpg" />
+<file href="scormcontent/assets/KE6VwExVOKKw-M3i_qIc8cUWZA35xC6Nt.jpg" />
+<file href="scormcontent/assets/O7fiqTxwsX6567GX_8zQR4swoqsCo2xoU.png" />
+<file href="scormcontent/assets/TS94psshhbcwOM8d_cCguJ_eCJ-8RM_Il.jpg" />
+<file href="scormcontent/assets/ulqOF1TOVRqPjZpZ_mountains.jpg" />
+<file href="scormcontent/assets/1b8IJ5nhZUh9chp8_WcLJz96l3rEo2trf.jpg" />
+<file href="scormcontent/assets/Cy0Rnvdk1aKYG-I7_CNjSLk0J_ULskdH4.jpg" />
+<file href="scormcontent/assets/6S5gaCEOY1KYvxWJ_yHQn-vvNJlebswvR.jpg" />
+<file href="scormcontent/assets/5K7MoMd-GLZ2rhPq_g1-vP6EMeJ3i_efn.jpg" />
+<file href="scormcontent/assets/izQulmfX9dwdOh9k_transcoded-rgEUD4HcHnmeXl6u-Petra%20spricht%20-%20deutsch%20%28Anke%20liest%29-geschnitten.mp3" />
+<file href="scormcontent/assets/_b4yLbIFxMK7wGAb_cHCZIMjf8X-wUL5X-CDC-Timeline%20for%20linking%20a%20case%20of%20Listeria%20Infection%20to%20an%20outbreak.pdf" />
+<file href="scormcontent/assets/a831wCAEaSxmIOo-_E-TUghppAKlq4WYB.jpg" />
+<file href="scormcontent/assets/LqfIHduZOcAExt5A_fGA-q6yOQFyR0Yog.jpg" />
+<file href="scormcontent/assets/9fwrebaamSRgpwzQ_G02jpHx3SW5psR_2.jpg" />
+<file href="scormcontent/assets/wSZw3olCBem2g-x5_ZV_aNtQSVlhygbos.jpg" />
+<file href="scormcontent/assets/ui0umadqlb2MRyH1_8gscuiAL_d6p_a-9.jpg" />
+<file href="scormcontent/assets/ZBTm6uM7xbJ4FDUf_GoJFlGyxyuN4VCWM.jpg" />
+<file href="scormcontent/assets/n7Ixg-x7VFoVyl_V_6SNzptghqEQiseS0.jpg" />
+<file href="scormcontent/assets/ktJMNhCszbkeu35X_4Gc87OxKMrqQBk0T.jpg" />
+<file href="scormcontent/assets/vhlQ38aPLss-9Lkq_H8-tF4m6IFHaBdzV.jpg" />
+<file href="scormcontent/assets/h71Z94b81wApi7p__-sGK5v6L_KEsxeQ4.jpg" />
+<file href="scormcontent/assets/Rp2P8Az5vyBcv6Se_n5Jt9iqD7qnMwMIA.jpg" />
+
+    </resource>
+  </resources>
+</manifest>
